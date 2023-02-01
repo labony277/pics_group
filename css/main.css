@@ -219,6 +219,7 @@ ul:last-child,
 ol:last-child,
 p:last-child {
 	margin-bottom: 0;
+	/* text-align: justify; */
 }
 
 p:last-child:after {
@@ -13072,6 +13073,7 @@ a img.aligncenter {
 
 .navigation.post-nav .s-overlay.ds {
 	background-color: #000;
+	margin-top: 15px;
 }
 
 /*
