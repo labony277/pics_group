@@ -15235,8 +15235,9 @@ body.active-side-header.slide-right .page_header_side {
 }
 
 .page_slider .slide3 .intro_featured_word.light {
-	font-weight: 100;
-	letter-spacing: 10px;
+    font-weight: 600;
+    /* letter-spacing: 10px; */
+    font-size: 40px;
 }
 
 @media (max-width: 767px) {
@@ -15253,8 +15254,9 @@ body.active-side-header.slide-right .page_header_side {
 }
 
 .page_slider .slide3 .intro_featured_word.bold {
-	font-weight: 400;
-	letter-spacing: 3px;
+    font-weight: 200;
+    /* letter-spacing: 3px; */
+    font-size: 28px;
 }
 
 .page_slider .slide3 .intro_layers_wrapper {

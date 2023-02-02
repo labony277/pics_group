@@ -941,46 +941,46 @@ function windowLoadInit() {
 			var dots = (data.dots !== 'undefined') ? data.dots : true;
 			var speed = (data.speed !== 'undefined') ? data.speed : 7000;
 
-			$currentSlider.flexslider({
-				animation: "fade",
-				pauseOnHover: true, 
-				useCSS: true,
-				controlNav: dots,   
-				directionNav: nav,
-				prevText: "",
-				nextText: "",
-				smoothHeight: false,
-				slideshowSpeed:speed,
-				animationSpeed:600,
-				start: function( slider ) {
-					slider.find('.intro_layers').children().css({'visibility': 'hidden'});
-					slider.find('.flex-active-slide .intro_layers').children().each(function(index){
-						var self = $(this);
-						var animationClass = !self.data('animation') ? 'fadeInDown' : self.data('animation');
-						setTimeout(function(){
-							self.addClass("animated "+animationClass);
-						}, index*500);
-					});
-				},
-				after :function( slider ){
-					slider.find('.flex-active-slide .intro_layers').children().each(function(index){
-						var self = $(this);
-						var animationClass = !self.data('animation') ? 'fadeInDown' : self.data('animation');
-						setTimeout(function(){
-							self.addClass("animated "+animationClass);
-						}, index*500);
-					});
-				},
-				end :function( slider ){
-					slider.find('.intro_layers').children().each(function() {
-						var self = $(this);
-						var animationClass = !self.data('animation') ? 'fadeInDown' : self.data('animation');
-						self.removeClass('animated ' + animationClass).css({'visibility': 'hidden'});
-							// $(this).attr('class', '');
-					});
-				},
+			// $currentSlider.flexslider({
+			// 	animation: "fade",
+			// 	pauseOnHover: true, 
+			// 	useCSS: true,
+			// 	controlNav: dots,   
+			// 	directionNav: nav,
+			// 	prevText: false,
+			// 	nextText: false,
+			// 	smoothHeight: false,
+			// 	slideshowSpeed:speed,
+			// 	animationSpeed:600,
+			// 	start: function( slider ) {
+			// 		slider.find('.intro_layers').children().css({'visibility': 'hidden'});
+			// 		slider.find('.flex-active-slide .intro_layers').children().each(function(index){
+			// 			var self = $(this);
+			// 			var animationClass = !self.data('animation') ? 'fadeInDown' : self.data('animation');
+			// 			setTimeout(function(){
+			// 				self.addClass("animated "+animationClass);
+			// 			}, index*500);
+			// 		});
+			// 	},
+			// 	after :function( slider ){
+			// 		slider.find('.flex-active-slide .intro_layers').children().each(function(index){
+			// 			var self = $(this);
+			// 			var animationClass = !self.data('animation') ? 'fadeInDown' : self.data('animation');
+			// 			setTimeout(function(){
+			// 				self.addClass("animated "+animationClass);
+			// 			}, index*500);
+			// 		});
+			// 	},
+			// 	end :function( slider ){
+			// 		slider.find('.intro_layers').children().each(function() {
+			// 			var self = $(this);
+			// 			var animationClass = !self.data('animation') ? 'fadeInDown' : self.data('animation');
+			// 			self.removeClass('animated ' + animationClass).css({'visibility': 'hidden'});
+			// 				// $(this).attr('class', '');
+			// 		});
+			// 	},
 
-			})
+			// })
 			//wrapping nav with container - uncomment if need
 			// .find('.flex-control-nav')
 			// .wrap('<div class="container nav-container"/>')
