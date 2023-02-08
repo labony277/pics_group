@@ -213,13 +213,15 @@ h6:last-child {
 
 p {
 	margin-bottom: 10px;
+	text-align: justify;
 }
+
 
 ul:last-child,
 ol:last-child,
 p:last-child {
 	margin-bottom: 0;
-	/* text-align: justify; */
+	/* text-align: center; */
 }
 
 p:last-child:after {
