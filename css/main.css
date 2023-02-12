@@ -18706,6 +18706,7 @@ a.btn {
 
 .service-item1 .icon-box {
 	padding: 57px 55px 55px;
+	height: 340px;
 }
 
 @media (max-width: 427px) {
