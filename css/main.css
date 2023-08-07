@@ -1110,7 +1110,6 @@ input[type="radio"]:disabled + label:before {
 [role="tablist"] .card-header a:after {
 	background: none;
 	bottom: auto;
-	content: "-";
 	height: 30px;
 	line-height: 30px;
 	margin-top: -18px;
@@ -1133,7 +1132,6 @@ input[type="radio"]:disabled + label:before {
 }
 
 [role="tablist"] .card-header a.collapsed:after {
-	content: "+";
 	margin-top: -15px;
 }
 
