@@ -5952,6 +5952,12 @@ img {
     max-width: 100%;
 }
 
+.logo_img  img {
+    max-width: 60%;
+     max-height: 50%; 
+     margin-left: 30%;
+}
+
 .item_img img {
     max-width: 85%;
      max-height: 90%;}
