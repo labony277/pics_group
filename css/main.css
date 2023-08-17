@@ -1672,8 +1672,8 @@ Owl Default Theme
     right: 0;
 }
 .item-media1 img {
-    width: 270px;
-    height: 250px;
+    width: 100%;
+    
     overflow: hidden;
 }
 /* .owl-center theme */
